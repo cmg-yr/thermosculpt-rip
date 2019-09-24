@@ -1,0 +1,478 @@
+@charset "utf-8";
+/* CSS Document */
+/*----------------
+RESET CSS
+-----------------*/
+body {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0;
+	background: #fff;
+	color: #2f2915;
+	text-align: center;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Montserrat';
+}
+div, ul, h1, h2, h3, h4, h5, li, p, img, form, input, textarea {
+	margin: 0;
+	padding: 0;
+}
+header, section, footer, aside, nav, main, article, figure {
+	display: block;
+}
+table, tr, td {
+	border: 0;
+}
+a {
+	outline: none;
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	outline: none;
+	color: #000;
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+li {
+	list-style: none;
+}
+* {
+	box-sizing: border-box;
+}
+.img-full {
+	max-width: 100%;
+}
+.clearall {
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+}
+/*-----------------------
+MAIN CSS START
+------------------------*/
+.container {
+	width: 1004px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+/*--====================================================
+CSS FOR UPSELL PAGE
+====================================================================-*/
+.logo-div {
+    float: left;
+	margin-top:18px;
+}
+.logo {
+    float: left;
+    max-width: 100%;
+}
+.logo-div p {
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+}
+.up-top-bar{
+    float: left;
+    width: 100%;
+    padding: 7px 0 6px;
+    background: #151515;
+    position: relative;
+    z-index: 1;
+}
+.up-top-p1 {
+    float: left;
+    width: 100%;
+    color: #ff2727;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.up-top-p1 span {
+    color: #fff;
+}
+
+.up-sec1{
+	float: left;
+    width: 100%;
+}
+.wht-body {
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 0px 20px 40px;
+    border-radius: 0 0 2px 2px;
+    -webkit-box-shadow: 1px 1px 9px 2px #dedede;
+    box-shadow: 1px 1px 9px 2px #dedede;
+}
+.up-logo-bar {
+    float: left;
+    width: 100%;
+    padding: 14px 0 20px;
+}
+.up-logo {
+    float: left;
+    max-width: 100%;
+    margin: 7px 0 0 0;
+}
+.up-steps {
+    display: inline-block;
+    max-width: 100%;
+    margin: 14px 0 0 0;
+}
+.up-seals {
+    float: right;
+    max-width: 236px;
+	width:100%;
+}
+.up-box{
+	float: left;
+    width: 100%;
+	border:3px solid #d38e1b;
+	background:url(../images/up-box-bg.jpg) repeat left top;
+	border-radius:10px;
+	margin-top:10px;
+	position:relative;
+	padding:34px 0 0;
+}
+.special-up {
+    position: absolute;
+    left: -13px;
+    top: -13px;
+    max-width: 100%;
+}
+.up-bx-lft{
+	float:left;
+	width:300px;
+}
+.up-btl-1{
+	display:inline-block;
+	max-width:100%;
+	margin-top:28px;
+}
+.up-bx-rit{
+	float:right;
+	width:650px;
+	text-align:left;
+	padding-right:90px;
+	position:relative;
+}
+.up-p1{
+	float: left;
+    width: 100%;
+    color: #040305;
+    font-size: 40px;
+    line-height: 38px;
+}
+.up-p2{
+	float: left;
+    width: 100%;
+    color: #010101;
+    font-size: 20px;
+    line-height: 22px;
+	padding:10px 0 0;
+}
+.up-p2 span{
+	font-weight:600;
+}
+.up-ul{
+	float: left;
+    width: 70%;
+	margin:20px 0 10px;
+}
+.up-ul li{
+	float: left;
+    width: 100%;
+	color: #e49003;
+    font-size: 20px;
+    line-height: 22px;
+	font-weight:600;
+	text-align:left;
+	text-transform:uppercase;
+	padding:10px 0 10px 55px;
+	margin-bottom:7px;
+	background:url(../images/up-ic1.png) no-repeat left top, url(../images/up-line.png) no-repeat bottom left;
+}
+.up-ul li:nth-child(2){
+	background:url(../images/up-ic2.png) no-repeat left 3px , url(../images/up-line.png) no-repeat bottom left;
+}
+.up-ul li:nth-child(3){
+	background:url(../images/up-ic3.png) no-repeat left top;
+}
+.up-p3{
+	float: left;
+    width: 100%;
+    color: #2d2d2d;
+    font-size: 24px;
+    line-height: 32px;
+	letter-spacing:-0.5px;
+}
+.brwn-clr{
+	color: #c85821;
+}
+.cut-rel{
+	position:relative;
+	padding:0 5px;
+}
+.cut-rel img{
+	position:absolute;
+	left:0;
+	top:4px;
+	max-width:100%;
+}
+.up-p4{
+	float: left;
+    width: 100%;
+    color: #c75a22;
+    font-size: 38px;
+    line-height: 38px;
+	font-weight:bold;
+	margin:12px 0 23px;
+}
+.up-btn{
+	float:left;
+	max-width:100%;
+	margin-bottom:10px;
+}
+.no-p1 {
+    display:inline-block;
+    width: 328px;
+    color: #adadad;
+    font-size: 13px;
+    line-height: 18px;
+	text-align:center;
+}
+.no-p1 img {
+    vertical-align: top;
+    margin: 1px 2px 0 0;
+}
+.up-seal{
+	position:absolute;
+	right:20px;
+	top:120px;
+	max-width:100%;
+}
+footer {
+    float: left;
+    width: 100%;
+    padding: 45px 0 20px;
+}
+footer p {
+    float: left;
+    width: 100%;
+    color: #000000;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 25px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*-------------------
+CSS FOR UPSELL 2
+-------------------------*/
+.upsell-2 .up-box {
+    border: 3px solid #4c0d68;
+    background: url(../images/up2-box-bg.jpg) repeat left top;
+}
+.upsell-2 .up-ul li {
+    color: #4c0d68;
+    background: url(../images/up2-ic1.png) no-repeat left top, url(../images/up-line.png) no-repeat bottom left;
+}
+.upsell-2 .up-ul li:nth-child(2){
+	background:url(../images/up2-ic2.png) no-repeat left top , url(../images/up-line.png) no-repeat bottom left;
+}
+.upsell-2 .up-ul li:nth-child(3){
+	background:url(../images/up2-ic3.png) no-repeat left 2px;
+}
+.purpl-c{
+	color:#4c0d68;
+}
+
+
+
+
+
+/*-----------------------=============================================================================================
+CSS FOR MEDIA QUERY
+----------------------============================================================================================---*/
+.show-mob, .show-tab {
+	display: none;
+}
+.show-desk {
+	display: block;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+@media only screen and (max-width:1020px) {
+.container {
+	width: 755px;
+}
+.show-mob, .show-desk {
+	display: none;
+}
+.show-tab {
+	display: block;
+}
+
+.logo-div {
+    margin-top: 10px;
+}
+.logo-div p {
+    font-size: 13px;
+}
+.up-steps {
+    max-width: 307px;
+    width:100%;
+}
+.up-seals {
+    max-width: 172px;
+    width: 100%;
+}
+.up-bx-rit {
+    width: 68%;
+    padding-right: 10px;
+}
+.up-bx-lft {
+    width: 30%;
+}
+.special-up {
+    left: -11px;
+    top: -11px;
+    max-width: 160px;
+    width: 100%;
+}
+.up-p1 {
+    font-size: 34px;
+    line-height: 35px;
+}
+.up-p2 {
+    font-size: 17px;
+    line-height: 22px;
+    padding: 6px 0 0;
+}
+.up-seal {
+    right: 15px;
+    top: 109px;
+    max-width: 140px;
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width:767px) {
+.container {
+	width: 100%;
+	padding: 0 10px;
+	max-width: 600px;
+}
+.show-desk, .show-tab {
+	display: none;
+}
+.show-mob {
+	display: block;
+}
+/*-------------------------
+CSS FOR LOGO BAR
+--------------------------*/
+.logo-div {
+    margin-top: 0px;
+}
+.logo-div p {
+    font-size: 12px;
+}
+.up-top-p1 {
+    font-size: 14px;
+    line-height: 18px;
+}
+.up-top-bar {
+    padding: 4px 0 3px;
+}
+.up-steps, .special-up, .up-btl-1, .up-ul, .up-seal {
+    display:none;
+}
+
+.wht-body {
+    padding: 0px;
+    box-shadow: none;
+}
+.up-logo-bar {
+    padding: 10px 0 10px;
+}
+.up-logo {
+    max-width: 145px;
+	margin:0;
+}
+.up-seals {
+    max-width: 120px;
+	margin-top:1px;
+}
+.up-bx-rit {
+    width: 100%;
+    padding-right: 0px;
+	text-align:center;
+}
+.up-box {
+    padding: 18px 12px;
+	margin:0;
+}
+.up-p1 {
+    font-size: 28px;
+    line-height: 30px;
+}
+.up-p3 {
+    font-size: 20px;
+    line-height: 29px;
+}
+.up-btn {
+    float: none;
+	display:inline-block;
+}
+.up1-mob-img{
+	display:inline-block;
+	max-width:100%;
+	margin:12px 0;
+}
+.no-p1 {
+    width: 100%;
+}
+
+footer {
+    padding: 30px 0 10px;
+}
+footer p {
+    margin-bottom: 15px;
+}
+}
+@media only screen and (max-width:365px) {
+.up-seals {
+    max-width: 110px;
+	margin-top:3px;
+}
+}
+@media only screen and (max-width:350px) {
+.up-seals {
+   display:none;
+}
+}
+@media only screen and (max-width:340px) {
+.up-logo {
+    max-width: 135px;
+}
+.up-seals {
+    max-width: 122px;
+}
+}
+.by-submit-promo {font-size: 14px;font-weight: 300;margin-bottom: 30px;}

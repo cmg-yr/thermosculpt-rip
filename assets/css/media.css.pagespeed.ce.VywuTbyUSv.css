@@ -1,0 +1,707 @@
+@charset "utf-8";
+/*-----------------------=============================================================================================
+CSS FOR MEDIA QUERY
+----------------------============================================================================================---*/
+.show-mob, .show-tab {
+	display: none;
+}
+.show-desk {
+	display: block;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+@media only screen and (max-width:1325px) {
+#side_arrow{
+	display:none;
+}
+ }
+ @media only screen and (max-width:1180px) {
+.container {
+	width: 1004px;
+}
+/*-------------------------
+CSS FOR SECTION 1
+--------------------------*/
+.bnr-slider {
+	display:none;
+}
+.sec1-lft {
+    width: 66%;
+	margin-top:15px;
+}
+.sec1-right {
+    width: 34%;
+}
+.sec1-lft-img {
+    max-width:100%;
+}
+.sec1-seal{
+	width:250px;
+}
+.form-box {
+	margin-top: 5px;
+}
+.sec1-p2 {
+	font-size: 28px;
+	line-height: 30px;
+}
+.sec1-p3 {
+	font-size: 42px;
+	line-height: 47px;
+}
+.sec1-input {
+	height: 38px;
+	margin-bottom: 10px;
+}
+
+.section-1 {
+	padding: 30px 0 30px;
+}
+.sec1-box2-rit {
+	width: 44%;
+}
+.sec1-box2-lft {
+	width: 52%;
+	margin:42px 0 0;
+}
+.sec1-p4 {
+	font-size:30px;
+	line-height: 34px;
+}
+/*-------------------------
+CSS FOR SECTIOPN 2
+--------------------------*/
+.section-2 {
+	padding: 140px 0 65px;
+}
+.sec2-rit {
+	width: 50%;
+}
+.s2-p1 {
+	font-size: 30px;
+	line-height: 33px;
+}
+.s2-p2 {
+	padding:0 20px;
+}
+.sec2-btl {
+	max-width:100%;
+	margin-top: -50px;
+}
+/*-------------------------
+CSS FOR SECTIOPN 5
+--------------------------*/
+.sec5-box {
+	padding: 40px 0 0 80px;
+}
+.sec5-btl {
+	max-width: 580px;
+	width:100%;
+}
+/*-------------------------
+CSS FOR SECTIOPN 7
+--------------------------*/
+.sec7-lft {
+	width: 63%;
+	padding-left: 30px;
+}
+.sec7-p1 {
+	font-size: 36px;
+	margin-top: 35px;
+	line-height: 40px;
+}
+.sec7-btl {
+	top: 25px;
+	max-width: 370px;
+	width:100%;
+}
+.sec7-box-2 {
+	padding: 0 30px 80px 30px;
+}
+
+.sec8-p2 {
+	font-size: 89px;
+	line-height: 90px;
+}
+/*-------------------------
+CSS FOR SECTIOPN 10
+--------------------------*/
+.s10-box {
+	width: 68%;
+}
+
+/*-===================================================================================
+CSS FOR CHECKOUT PAGE
+--------------------------*/
+.chk-lft {
+    width: 60%;
+}
+.chk-rit {
+    width: 38%;
+}
+.chk-ylw-arw {
+    right: 0;
+}
+.chk-price-tbl {
+    width: 69%;
+    padding: 16px 27px 0 0;
+}
+.chk-btlbox {
+    width: 30%;
+}
+
+}
+@media only screen and (max-width:1023px) {
+.container {
+	width: 755px;
+}
+.show-mob, .show-desk {
+	display: none;
+}
+.show-tab {
+	display: block;
+}
+/*-------------------------
+CSS FOR LOGO
+--------------------------*/
+.mob-mnu {
+	float: right;
+	margin: 25px 25px 0 0;
+}
+.menu-btn{
+	display:none;
+}
+
+/*-------------------------
+CSS FOR SECTION 1
+--------------------------*/
+.section-2 {
+	padding: 140px 0 30px;
+	min-height: 1029px;
+}
+.sec1-p2 {
+	font-size: 21px;
+	line-height: 25px;
+}
+.sec1-p3 {
+	font-size: 32px;
+	line-height: 37px;
+}
+
+.sec2-rit {
+	width: 57%;
+}
+.s2-p1 {
+	font-size: 25px;
+	line-height: 28px;
+}
+.s2-p2 {
+	padding: 0;
+}
+
+/*-------------------------
+CSS FOR SECTION 3
+--------------------------*/
+.section-3 {
+	padding: 30px 0 0;
+}
+.s3-crs {
+	right: 15px;
+	width:40px;
+}
+.s3-tik {
+	left: 15px;
+	width:50px;
+}
+.sec3-ul {
+	width: 85%;
+}
+
+/*-------------------------
+CSS FOR SECTION 4
+--------------------------*/
+.section-4 {
+	padding: 300px 0 0px;
+	height:auto;
+	min-height: 1029px;
+}
+.sec4-p1 {
+	font-size: 45px;
+	line-height: 56px;
+}
+/*-------------------------
+CSS FOR SECTION 5
+--------------------------*/
+.sec5-box {
+	padding: 40px 0 0 10px;
+	background: url(../images/sec5-mdl.png) no-repeat 145% top;
+}
+.sec5-btl {
+	max-width: 500px;
+}
+.sec5-ul li {
+	font-size: 19px;
+	padding: 5px 17px;
+}
+/*-------------------------
+CSS FOR SECTION 6
+--------------------------*/
+.section-6 {
+	height:auto;
+	min-height: 847px;
+}
+/*-------------------------
+CSS FOR SECTION 7
+--------------------------*/
+.sec7-lft {
+	width: 60%;
+	padding-left: 0;
+}
+.sec7-btl{
+	right:0px;
+	max-width: 310px;
+}
+.sec7-p1 {
+	font-size: 30px;
+	line-height: 36px;
+}
+/*-------------------------
+CSS FOR SECTION 6
+--------------------------*/
+.section-8 {
+	float: left;
+	width: 100%;
+	padding: 245px 0 0px;
+	height:auto;
+	min-height: 1029px;
+}
+.sec8-p1 {
+	font-size: 39px;
+	line-height: 46px;
+}
+.sec8-p2 {
+	font-size: 66px;
+	line-height: 67px;
+}
+/*-------------------------
+CSS FOR SECTION 10
+--------------------------*/
+.section-10 {
+    padding: 180px 0 65px;
+	min-height: 1120px;
+}
+.s10-box {
+	width: 85%;
+	margin:0;
+}
+.s10-img {
+	max-width:100%;
+}
+
+/*-===================================================================================
+CSS FOR CHECKOUT PAGE
+--------------------------*/
+.chk-lft {
+    width: 62%;
+}
+.chk-rit {
+    width: 36%;
+}
+.chk-ylw-arw {
+    display:none;
+}
+.chk-box {
+    padding: 0;
+}
+.post-logo {
+    width: 100%;
+    padding-left: 220px;
+    margin: 20px 0;
+}
+.view-txt {
+    padding: 12px 6px;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+}
+ @media only screen and (max-width:767px) {
+.container {
+	width: 100%;
+	padding: 0 10px;
+	max-width: 600px;
+}
+.show-desk, .show-tab {
+	display: none;
+}
+.show-mob {
+	display: block;
+}
+/*-------------------------
+CSS FOR LOGO BAR
+--------------------------*/
+.top-bar {
+	padding: 7px 0;
+}
+.mob-menu-btn{
+	cursor:pointer;
+	position:absolute;
+	right:12px;
+	top:-37px;
+}
+.mob-menu{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.menu-bar-mob{
+	float:left;
+	width:100%;
+	padding:10px 0;
+}
+.menu-bar-mob li{
+	float:left;
+	width:100%;
+}
+.menu-bar-mob li a{
+	float:left;
+	width:100%;
+	color: #2d2d2d;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+	padding:10px 15px;
+	text-align:left;
+}
+/*-------------------------
+CSS FOR BANNER
+--------------------------*/
+.section-1{
+    background-size: contain;
+	padding: 30px 0 0px;
+}
+.sec1-lft {
+	width: 100%;
+	margin-top: 0px;
+}
+.sec1-lft-img-mob{
+	display:inline-block;
+	max-width:100%;
+}
+.sec1-right {
+	width: 100%;
+	margin-top:20px;
+}
+.form-box {
+	margin-top: 15px;
+}
+.sec1-box2-lft {
+	width: 100%;
+	margin: 10px 0 30px;
+}
+.sec1-box2-rit {
+	width: 100%;
+}
+
+/*-------------------------
+CSS FOR SECTION 2
+--------------------------*/
+.section-2 {
+	padding: 140px 0 30px;
+	min-height: auto;
+}
+.sec2-rit {
+	width: 100%;
+}
+.s2-p1 {
+	font-size: 22px;
+	line-height: 28px;
+}
+.sec2-btl {
+	margin-top: 0;
+}
+.proof {
+	max-width: 400px;
+	width:100%;
+}
+
+/*-------------------------
+CSS FOR SECTION 3
+--------------------------*/
+.sec3-p1 {
+	font-size: 38px;
+	line-height: 43px;
+}
+.sec3-p2 {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.sec3-50 {
+	width: 100%;
+	margin-top: 20px;
+}
+.sec3-p3 {
+	font-size: 27px;
+	line-height: 27px;
+}
+.vs-img {
+	left:50%;
+	top: -21px;
+	margin-left:-21px;
+}
+.sec3-50.fr {
+	border-left:none;
+	border-top: 1px solid #f7941d;
+	margin:40px 0 12px;
+	padding-top:15px;
+}
+.s3-tik {
+	left: 0;
+	width: 40px;
+}
+.sec3-ul {
+	width: 88%;
+}
+.s3-crs {
+	right: 0;
+	width: 37px;
+}
+.sec3-p2 {
+	font-size: 22px;
+	line-height: 25px;
+	margin-top:7px;
+}
+/*-------------------------
+CSS FOR SECTION 4
+--------------------------*/
+.section-4 {
+	padding: 80px 0 50px;
+	height: auto;
+	min-height: auto;
+	background-size:cover;
+}
+.sec4-p1 {
+	font-size: 30px;
+	line-height: 36px;
+}
+.s4-btl {
+	max-width:320px;
+	width:100%;
+}
+.sec3-p1 {
+	font-size: 32px;
+	line-height: 38px;
+}
+/*-------------------------
+CSS FOR SECTION 4
+--------------------------*/
+.sec5-box {
+	padding: 20px 0 0 0;
+	background:none;
+}
+.sec5-btl {
+	float: none;
+	display:block;
+	max-width: 300px;
+	width:100%;
+	margin:0 auto 20px;
+}
+.sec5-p1 {
+	font-size: 27px;
+	line-height:32px;
+}
+.sec5-box .sec1-p6 {
+	width: 100%;
+	margin-top: 12px;
+}
+.sec5-p2 {
+	font-size: 22px;
+	margin: 20px 0 10px;
+}
+.sec5-ul li {
+	float: left;
+	width:100%;
+	border-left: none;
+	padding: 5px 0;
+}
+.sec5-ul {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+
+/*-------------------------
+CSS FOR SECTION 6
+--------------------------*/
+.section-6 {
+	padding: 100px 0 90px;
+	height: auto;
+	min-height: auto;
+	background-size:cover;
+}
+.sec6-p1 {
+	font-size: 70px;
+	line-height: 60px;
+	margin-top: 12px;
+}
+
+/*-------------------------
+CSS FOR SECTION 7
+--------------------------*/
+.sec7-lft {
+	width: 100%;
+}
+.sec7-p1 {
+	font-size: 26px;
+	line-height: 32px;
+	margin-top: 25px;
+}
+.sec7-btl {
+	position: static;
+	display:block;
+	margin:0 auto 25px;
+}
+.sec7-p2 {
+	margin-top: 15px;
+}
+.sec7-box-2 {
+	padding: 0 0px 10px;
+}
+.s7-50 {
+	width: 100%;
+}
+
+/*-------------------------
+CSS FOR SECTION 8
+--------------------------*/
+.section-8 {
+	padding: 90px 0 200px;
+	height: auto;
+	min-height: auto;
+	background-size:cover;
+}
+.sec8-p1 {
+	font-size: 26px;
+	line-height: 31px;
+}
+.sec8-p2 {
+	font-size: 44px;
+	line-height: 45px;
+	margin: 10px 0;
+}
+/*-------------------------
+CSS FOR SECTION 9
+--------------------------*/
+.section-9 {
+	padding-bottom:30px;
+}
+.fb{
+	margin-top: 15px;
+}
+/*-------------------------
+CSS FOR SECTION 10
+--------------------------*/
+.section-10 {
+	padding: 90px 0 30px;
+	min-height: auto;
+	background-size:contain;
+}
+.s10-box {
+	width: 100%;
+}
+
+.footer {
+	padding: 0 0 30px;
+}
+.foo-card {
+	margin-bottom: 10px;
+}
+.footer p {
+	margin-top: 25px;
+}
+/*-===================================================================================
+CSS FOR CHECKOUT PAGE
+--------------------------*/
+.chkout-bg {
+    padding: 0 0 30px;
+}
+.chk-lft {
+    width: 100%;
+}
+.chk-rit {
+    width: 100%;
+	margin:0;
+}
+.view-txt {
+    padding: 10px 6px;
+    font-size: 16px;
+    line-height: 20px;
+	text-align:left;
+	position:relative;
+	padding-left:55px;
+}
+.view-txt img{
+	position:absolute;
+	left:12px;
+	top:10px;
+}
+.chk-btlbox {
+    display:none;
+}
+.chk-price-tbl {
+    width: 100%;
+    padding: 0 20px;
+}
+table.chk-prd-info tr:last-child td {
+    padding: 20px 0 0;
+}
+.post-logo-img {
+    max-width:138px;
+	width:100%;
+	top:9px;
+}
+.post-logo {
+    padding-left: 145px;
+    font-size: 15px;
+    line-height: 22px;
+}
+.chk-lft-inbox {
+    padding: 15px 0px 20px;
+}
+.chk-p1 {
+    margin: 20px 0 0;
+}
+
+#btm-popup {
+    font-size: 14px;
+    line-height: 20px;
+    width: 340px;
+    height: 80px;
+}
+#pur_time{font-size:13px!important; }
+}
+ @media only screen and (max-width:425px) {
+  input.btnSubmit {border-radius: 10px; width: 90% !important;}
+ .footer {padding: 0 0 150px;}
+ }
+@media only screen and (max-width:420px) {
+#btm-popup {display:none;}
+.fixbox-bottle {height: 170px!important;}
+.stick_bar {height: 100px!important;}
+.security2 {top: -115px!important;}
+.rush-order {top: -110px!important;}
+.footer {padding: 0 0 150px;}
+}
+@media only screen and (max-width:375px) {
+	.logo-div {font-size: 13px;}
+	input.btnSubmit {border-radius: 10px; width: 100% !important;}
+}

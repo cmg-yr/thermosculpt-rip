@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html ng-app="Offer" ng-controller="DataController">
+<head>
+    <meta charset="utf-8" />
+    <title>{{S1.name}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+ 
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800" rel="stylesheet">
+<link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/css/magnific-popupaf49.css?1552419335">
+<!--Maestro-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <link rel='stylesheet' href='https://bridge-middletier.xyz/dist/v1/bridge.min.css'> 
+    <script id='bridge-controller' src='https://bridge-middletier.xyz/dist/v1/bridge.min.js' data-url='oiajsdwjay.herokuapp.com'></script>
+    <script src='https://bridge-middletier.xyz/dist/modules/clicks.min.js'></script>
+<!--End of Maestro-->
+<script>
+    function getDate(days) {
+      var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+      var monthNames = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+      var now = new Date();
+      now.setDate(now.getDate() + days);
+      var nowString = monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+      document.write(nowString);
+    }
+</script>
+<style>
+input.btnSubmit {background: url(assets/images/form-ord-nw-btn.png) no-repeat;height: 75px;border-radius: 5px;width: 100%;margin: 10px 0 25px;}
+input.btnSubmit:hover {cursor: pointer;}
+
+/*#mobile-terms, #desktop-terms {*/
+/*    opacity: 0.5;*/
+/*}*/
+
+/*#mobile-terms {*/
+/*        display: none;*/
+        
+/*    }*/
+    
+/*    @media screen and (max-width: 767px) {*/
+/*        #mobile-terms {*/
+/*            display: block;*/
+/*        }*/
+       
+/*       #desktop-terms {*/
+/*           display: none;*/
+/*       } */
+/*    }*/
+</style>
+</head>
+<body>
+<div class="chkout-bg">
+	<div class="container">
+    	<div class="chk-box">
+        	<div class="chk-lft">
+            	<img src="assets/images/chk-img1.png" class="chk-img1" alt="img">
+                <div class="chk-prc-box">
+                	<p class="view-txt"><img src="assets/images/eye-img.png" alt=""> <span id="visitor-count" class="views emphasis">98</span> others are viewing this offer right now - <span id="stopwatch">00:00</span></p>
+                    <div class="chk-lft-inbox">
+                    	<div class="chk-btlbox">
+                    		<img src="assets/images/chk-btl.png" class="chk-btl" alt="img">
+                        </div>
+                        <div class="chk-price-tbl">
+                            <table class="chk-prd-info" cellpadding="0" cellspacing="0">
+                            	<tbody><tr>
+                                	<td><span>{{S1.name}}</span><br>{{data.rebill.trialLength.total}} Day Trial, No Commitments, Cancel Anytime!</td>
+                                    <td><span class="red-c">trial</span></td>
+                                </tr>
+                                <tr>
+                                	<td>Shipping:</td>
+                                    <td>${{S1.pricing.shipping.noDiscount}}</td>
+                                </tr>
+                                <tr>
+                                	<td>TOTAL</td>
+                                    <td>${{S1.pricing.shipping.noDiscount}}</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-logo">
+                    <img src="assets/images/post-logo.png" class="post-logo-img" alt="img">
+                    Your order is estimated to ship by <span class="red-c"><b><span><script type="text/javascript">getDate(5);</script></span></b></span>
+                </div>
+                <img src="assets/images/chk-arw.png" class="chk-arw show-desk show-tab" alt="img">
+                <!--<div class="by-submit" id='desktop-terms'><p>By submitting, you affirm to have read and agreed to our <a href="terms.html" class="bridge-modal" style="color: #0000FF;">Terms and Conditions</a>. After your {{data.rebill.trialLength.total}} day trial period of {{S1.name}} has expired, you will be enrolled in our membership program for ${{S1.pricing.product}}. You can cancel anytime by calling {{data.phone}}.</p></div>-->
+            </div>
+            
+
+            <div class="chk-rit">
+            	<img src="assets/images/sec1-seal.png" class="sec1-seal-chk" alt="img">
+                <div class="form-box" id="order">
+                <form id='PaymentForm'>
+                    <input type="hidden" name='productCode' value="main">
+                    <!--<input type="hidden" name="creditCardNumber" id="creditCardNumber">-->
+                    <input name='billShipSame' type='CHECKBOX' id="billShipSame" style="display:none;" checked="checked">
+            		<p class="sec1-p1">Limited Time Only</p>
+                    <div class="form-head">
+                        <p class="sec1-p2">Payment Information</p>
+                        <p class="sec1-p3">final step!</p>
+                    </div>
+                	<div class="form-cont">
+                        <p class="chk-p2">Pay with Credit or Debit Card</p>
+                        <img src="assets/images/we-acc.png" class="we-acc" alt="img">
+                        <div class="clearall"></div>
+                        <label class="chk-lbl">Credit Card #*</label>
+                        <input type="tel" class="sec1-input creditCard" name='creditCardNumber' style="width:100% !important;">
+                        <label class="chk-lbl">Select Card Type*</label>
+                        <select name='creditCardType' alt="Exp Month" class="sec1-input wi-48" style="width:100% !important;">
+                            <option value="" selected>Card Type</option>
+                            <option value="Visa">Visa</option>
+                            <!--<option value="Mastercard">Mastercard</option>-->
+                            <option value="Discover">Discover</option>
+                        </select>
+                        <label class="chk-lbl">Exp Date*</label>
+                        <select name='expiryMonth' alt="Exp Month" class="sec1-input wi-48" style="width:48% !important;">
+                            <option value="" selected>Month</option>
+                            <option value="01">(01) January</option>
+                            <option value="02">(02) February</option>
+                            <option value="03">(03) March</option>
+                            <option value="04">(04) April</option>
+                            <option value="05">(05) May</option>
+                            <option value="06">(06) June</option>
+                            <option value="07">(07) July</option>
+                            <option value="08">(08) August</option>
+                            <option value="09">(09) September</option>
+                            <option value="10">(10) October</option>
+                            <option value="11">(11) November</option>
+                            <option value="12">(12) December</option>
+                        </select>
+                        <select name='expiryYear' alt="Exp Year" class="sec1-input wi-48 fr" style="width:48% !important;">
+                            <option value="" selected>Year</option>
+                            <option value='19'>2019</option>
+                            <option value='20'>2020</option>
+                            <option value='21'>2021</option>
+                            <option value='22'>2022</option>
+                            <option value='23'>2023</option>
+                            <option value='24'>2024</option>
+                            <option value='25'>2025</option>
+                            <option value='26'>2026</option>
+                            <option value='27'>2027</option>
+                            <option value='28'>2028</option>
+                            <option value='29'>2029</option>
+                            <option value='30'>2030</option>
+                            <option value='31'>2031</option>
+                            <option value='32'>2032</option>
+                            <option value='33'>2033</option>
+                            <option value='34'>2034</option>
+                        </select>
+                        <label class="chk-lbl">CVV*</label>
+                        <input type="tel" class="sec1-input wi-48" name='CVV' style="width:48% !important;" onkeypress="return isNumberKey(event)" maxlength=4><span style="float:left;margin-top:10px;"><a href="cvv.html" class="fb_cvv mfp-ajax"><p class="whts">What's This?</p></a></span>
+                        <p class="check-box-inp" style="display:none;"><input name="confirmTOS" type="checkbox" checked isRequired> I agree to the <a href="tc.html" class="fb_footer mfp-ajax">Terms &amp; Conditions</a></p>
+                        <!--<input type="image" src="assets/images/form-ord-nw-btn.png" class="form-ord-nw-btn pulse jsform_submitBtn" id='kformSubmit'>-->
+                        <input type="submit" class="btnSubmit pulse" name="create_prospect" value="" />
+                    	<div class="clearall"></div>
+                    	<img src="assets/images/form-secure.png" class="form-secure" alt="img">
+                	</div> 
+                    <input name="firstName" type="TEXT" value="" readonly="readonly" hidden />
+                    <input name="lastName" type="TEXT" value="" readonly="readonly" hidden />
+                    <input name="emailAddress" type="TEXT" value="" readonly="readonly" hidden />
+                    <input name="phoneNumber" type="TEXT" value="" readonly="readonly" hidden />
+                    <input name="city" type="TEXT" value="" readonly="readonly" hidden />
+                    <input name="postalCode" type="TEXT" value="" readonly="readonly" hidden />
+                    <input type="TEXT" name="country" value="" readonly="readonly" hidden />
+                    <input type="TEXT" name="state" readonly="readonly" value="" hidden />
+                    <input type="TEXT" name="address1" readonly="readonly" value="" hidden />
+                </form>
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/*=====FOOTER======*/-->
+<div class="footer">
+	<div class="container">
+		<img src="assets/images/foo-card.jpg" class="foo-card" alt="img">
+                <!--<p class="chk-p1 show-desk show-tab" style="font-family: 'Montserrat';">By placing your order today you'll be shipped a day supply of {{S1.name}} (just pay ${{S1.pricing.shipping.noDiscount}} S&H). If you feel {{S1.name}}is not for you, cancel within {{data.rebill.trialLength.total}} days from today to avoid the purchase price of ${{S1.pricing.product}} USD and enrollment in the auto-shipment program. Forty-five days after you start your trial and every thirty days thereafter, we shall send you a fresh day supply of {{S1.name}} and charge you ${{S1.pricing.product}} USD. You may cancel at any time by calling Customer Service at {{data.phone}}. Standard Delivery times are 3-5 Business Days.</p>-->
+			<p><a href="terms.html" class="bridge-modal">[ Terms and Conditions] </a> <a href="privacy.html" class="bridge-modal">[ Privacy & Policy ]</a> <a href="contact.html" class="bridge-modal"> [ Contact Us ]</a></p>
+
+
+		<p>REPRESENTATIONS REGARDING THE EFFICACY AND SAFETY OF {{S1.name}} HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. 
+		   <br class="show-desk">THE FDA ONLY EVALUATES FOODS AND DRUGS, NOT SUPPLEMENTS LIKE THESE PRODUCTS. 
+		   <br class="show-desk">THESE PRODUCTS ARE NOT INTENDED TO DIAGNOSE, PREVENT, TREAT, OR CURE ANY DISEASE. <a href="keto-study1.pdf" class="bridge-modal" style="color: #0000FF;">CLICK HERE </a> OR <a href="keto-study2.pdf" class="bridge-modal" style="color: #0000FF;">CLICK HERE</a> TO FIND EVIDENCE
+		   <br class="show-desk">  OF A TEST, ANALYSIS, RESEARCH, OR STUDY DESCRIBING THE BENEFITS, PERFORMANCE OR EFFICACY OF BASED ON THE EXPERTISE OF RELEVANT PROFESSIONALS.</p>
+		   
+		   <div id='mobile-terms'><p style="color:#000;">By submitting, you affirm to have read and agreed to our <a href="terms.html" class="bridge-modal">Terms and Conditions</a>. After your {{data.rebill.trialLength.total}} day trial period of {{S1.name}} has expired, you will be enrolled in our membership program for ${{S1.pricing.product}}. You can cancel anytime by calling {{data.phone}}.</p></div>
+
+		<p>Copyright &copy;2019 {{S1.name}}</p>
+	</div>
+</div>
+
+<style>
+  .white-popup {  position: relative;  background: #FFF;  padding: 20px;  width: auto;  max-width: 500px;  margin: 20px auto; }
+</style>
+<div id="extC" class="white-popup mfp-hide">
+</div>
+
+<script src="/js/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script src="/js/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">var spd=100;var spdVal=10;var cntDown=5*60*spdVal;setInterval(function(){var mn,sc,ms;cntDown--;if(cntDown<0){return false;}mn=Math.floor((cntDown/spdVal)/60);mn=(mn<10?'0'+mn:mn);sc=Math.floor((cntDown/spdVal)%60);sc=(sc<10?'0'+sc:sc);var result=mn+':'+sc;document.getElementById('stopwatch').innerHTML=result;},spd);$(document).ready(function($){$('.fb_footer').magnificPopup({type:'ajax',midClick:true,closeBtnInside:true,alignTop:true});$('.fb_cvv').magnificPopup({type:'inline',midClick:true,closeBtnInside:true,alignTop:true});});function isNumberKey(evt){var charCode=(evt.which)?evt.which:event.keyCode
+if(charCode>31&&(charCode<48||charCode>57))return false;return true;}</script>
+
+    <script>
+        const customer = GetUserInfo()
+        const customerName = `${customer.firstName} ${customer.lastName}`  
+        $('#customer-name').text(customerName)
+    </script>
+<!--Data Controller-->
+    <script src="js/DataController.js"></script>
+
+    <script>
+
+        var number_objects; 
+                var displayObject = $('.views'); 
+                
+                function loadRandom() { number_objects =  Math.floor(Math.random() * 99); }
+                function decreaseRandom() {
+                    guess = Math.ceil(Math.random() * 2);
+                    if (guess==1){
+                        
+                        number_objects -= Math.floor(Math.random() * 5) + 1;      
+                    } else {
+                        number_objects += Math.floor(Math.random() * 5) + 1;
+                    }
+                         
+                }
+                function showRandom() {
+                    if ( number_objects <= 10 ) loadRandom();
+                    displayObject.text(number_objects);
+                }
+                
+                loadRandom(); 
+                showRandom(); 
+                var interval = setInterval(function () {
+                    decreaseRandom();
+                    // display (update) it
+                    showRandom();
+                }, 20000);
+    </script>
+		</body>
+
+</html>

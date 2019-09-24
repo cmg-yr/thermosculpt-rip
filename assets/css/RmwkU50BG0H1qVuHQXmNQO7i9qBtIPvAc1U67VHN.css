@@ -1,0 +1,38 @@
+
+            .toast {color: #000000;}
+            .toast-message {color: #000000 !important;}
+            
+            
+            .toast {background-color: #ffffff;}
+            
+            
+            .toast {font-size: 16px !important;}
+            #toast-container {font-size: 16px !important;}
+            #toast-container > .toast-success{background-image: none !important;padding-left: 15px !important;}
+        #toast-container .popup-text-block{
+            display:inline-block;
+            width: auto !important;
+            float:right;
+        }
+        
+        #toast-container .popup-text-block.popup-has-image{
+            display:inline-block;
+            width: 180px !important;
+            float:right;
+        }
+        #toast-container .pop-image{
+            max-width:80px !important;
+            float:left;
+            display:inline-block;
+            margin-right:5px;
+        }   
+        
+        @media screen and (max-width: 600px) {
+  #toast-container .pop-image{
+            max-width:60px !important;
+  }
+  #toast-container  .popup-text-block.popup-has-image{
+            width: 140px !important;
+}
+}     
+        
